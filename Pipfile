@@ -2,9 +2,7 @@
 name = "pypi"
 url = "https://pypi.org/simple"
 verify_ssl = true
-
 [dev-packages]
-
 [packages]
 flask = "*"
 flask-sqlalchemy = "*"
@@ -17,13 +15,12 @@ gunicorn = "*"
 cloudinary = "*"
 flask-admin = "*"
 typing-extensions = "*"
-flask-jwt-extended = "==4.6.0"
 wtforms = "==3.1.2"
 sqlalchemy = "*"
-
+flask-jwt-extended = "*"
+werkzeug = "*"
 [requires]
 python_version = "3.13"
-
 [scripts]
 start="flask run -p 3001 -h 0.0.0.0"
 init="flask db init"
